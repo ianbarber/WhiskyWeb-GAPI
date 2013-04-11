@@ -1,0 +1,40 @@
+body {
+font-family: Verdana, sans-serif;
+}
+
+ul#whiskies {
+margin-top: 0px;
+clear: left;
+width: 270px;
+padding-top: 10px;
+padding-bottom: 10px;
+border: 2px solid #CCC;
+float: left;
+margin-right: 20px;
+}
+
+ul#whiskies li {
+padding-left: 10px;
+}
+
+div#whisky_details {
+width: 500px;
+border: 2px solid #CCC;
+float: left;
+padding: 10px;
+}
+
+div#whisky_details span {
+	color: #CCC;
+}
+
+div#whisky_details img {
+height: 300px;
+float: left;
+margin-right: 10px;
+border: 1px solid black;
+}
+
+div#whisky_details p {
+margin-top: 0px;
+}

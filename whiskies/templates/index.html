@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <title>Whisky on the Web</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script type="text/javascript" src="/js/base.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" ></script>
+</head>
+<body>
+  <h1>Whisky Web</h1>
+  <ul id="whiskies">
+    <li>Loading</li>
+  </ul>
+  <div id="whisky_details"><span>Please select a whisky.</span></div>
+  <script type="text/javascript">
+    function init() {
+      whisky.init('http://' + window.location.host + '/_ah/api');
+    }
+  </script>
+  <script src="https://apis.google.com/js/client.js?onload=init"></script>  
+</body>
+</html>
