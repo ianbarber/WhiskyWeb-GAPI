@@ -1,8 +1,9 @@
 var whisky = {
 	init: function(apiRoot) {
-		gapi.client.load('wweb', 'v1', whisky.list, apiRoot);
+		// API name, version, callback function, root for endpoint
+		gapi.client.load('wweb', 'v1', whisky.showlist, apiRoot);
 	},
-	list: function() {
+	showlist: function() {
 		var request = gapi.client.wweb.whisky.list();
 		request.execute(function(whiskies) {
 			$('#whiskies').empty();
